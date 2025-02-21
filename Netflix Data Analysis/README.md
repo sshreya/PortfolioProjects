@@ -1,6 +1,6 @@
 # Netflix Movies and TV Shows Data Analysis using SQL
 
-![] https://github.com/sshreya/PortfolioProjects/blob/main/Netflix%20Data%20Analysis/logo.png
+![] (https://github.com/sshreya/PortfolioProjects/blob/main/Netflix%20Data%20Analysis/logo.png)
 
 ## Overview
 This project uses Netflix data set from Kaggle. The goal of this project is to extract data from Kaggle , save it in local database and get some insights from the data.
