@@ -33,11 +33,11 @@ where x.rn > 1;
 
 -- Creating cohorts based on first purchase date for each customer
 select
-	CustomerID,
-	min(InvoiceDate) as InvoiceDate,
-  date_format(min(InvoiceDate),'%Y-%m-01') as CohortDate
+   CustomerID,
+   min(InvoiceDate) as InvoiceDate,
+   date_format(min(InvoiceDate),'%Y-%m-01') as CohortDate
 from 
-	online_retail
+    online_retail
 group by 1;
 
 -- CREATE COHORT INDEX
