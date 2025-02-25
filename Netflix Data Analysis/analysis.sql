@@ -2,20 +2,20 @@
 -- check for duplicates in the netflix table
 -- 1. check if there are rows with duplicate show_id
 select 
-	show_id,
+    show_id,
     count(*)
 from 
-	netflix 
+    netflix 
 group by 1 
 having count(*) > 1;
 
 -- 2. check if there are rows with duplicate type and title
 select * from netflix where (type,title) in (
 select 
-	type,
+    type,
     title
 from 
-	netflix 
+    netflix 
 group by 1,2 
 having count(*) > 1
 )
@@ -25,10 +25,10 @@ order by title;
 -- delete duplicate rows 
 with cte as(
 select 
-	show_id,
+    show_id,
     row_number()over(partition by type,title order by show_id) as rn 
 from 
-	netflix
+    netflix
 )
 delete from netflix where show_id in (select show_id from cte where rn > 1);
 
@@ -234,7 +234,7 @@ where x.rn = 1;
 
 -- 4 what is average duration of movies in each genre
 select 
-	ng.genre,
+    ng.genre,
     round(avg(cast(substring_index(n.duration,'m',1) as signed)),2) as avg_duration
 from 
 	netflix_genre ng 
