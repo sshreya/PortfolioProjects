@@ -3,8 +3,11 @@
 ## Overview
 This project uses online retail data from UCI ML Repository.
 Used SQL and python to understand user purchasing behaviour. 
-**Cohort** means a group of users who share same characteristics over a period of time. and for this analysis, we have segmented customers into cohorts based on the first date they made a purchase. 
-This traingle graph tells us how many users have returned in the 1,2,3.....13th months after they made their first purchase. This analysis gives us customer retention rate and also we can further get churn rate from this analysis.
+**Cohort** means a group of users who share same characteristics and for this analysis, we have created time based cohorts. We have segmented customers into cohorts based on the first date they made a purchase. 
+This triangle graph tells us how many users have returned in the 1,2,3.....13th months after they made their first purchase. ** COHORT INDEX ** represents the number of months since the first purchase of the users. 
+Formula for COHORT INDEX = 12 * (Invoice year - Cohort year) + (Invoice month - Cohort month) + 1
+
+This analysis gives us customer retention rate and also we can further get churn rate from this analysis.
 
 ![](https://github.com/sshreya/PortfolioProjects/blob/main/Cohort%20Retention%20Analysis/Cohort%20Retention%20Rate.png)
 
