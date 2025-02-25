@@ -8,4 +8,6 @@ This project uses online retail data from UCI ML Repository. Used SQL and python
 
 
 - **Dataset Link:** - https://archive.ics.uci.edu/dataset/352/online+retail
-- **Database:** - MySQL 
+- **Database:** - MySQL
+
+- **Relevant Link:** - https://youtu.be/LXqpx9mr0Is?si=bZWALOuAEgwO1wbp
