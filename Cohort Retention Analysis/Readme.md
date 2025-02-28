@@ -13,7 +13,7 @@ Formula for Cohort Index = 12 * (Invoice year - Cohort year) + (Invoice month - 
 
 This analysis gives us customer retention rate and also we can further get churn rate from this analysis.
 
-![](https://github.com/sshreya/PortfolioProjects/blob/main/Cohort%20Retention%20Analysis/Cohort%20Retention%20Rate.png)
+![](https://github.com/sshreya/PortfolioProjects/blob/main/images/Cohort%20Retention%20Analysis/Cohort%20Retention%20Rate.png)
 
 ## Dataset
 This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
@@ -37,7 +37,7 @@ group by 1,2
 order by total_money_spent desc 
 limit 10;
 ```
-![](https://github.com/sshreya/PortfolioProjects/blob/main/Cohort%20Retention%20Analysis/Top%2010%20customers.png)
+![](https://github.com/sshreya/PortfolioProjects/blob/main/images/Cohort%20Retention%20Analysis/Top%2010%20customers.png)
 
 What is the monthly revenue
 ```sql
@@ -48,5 +48,5 @@ from
 	online_retail_clean
 group by date_format(InvoiceDate,'%Y-%m-01');
 ```
-![](https://github.com/sshreya/PortfolioProjects/blob/main/Cohort%20Retention%20Analysis/monthly%20revenue.png)
+![](https://github.com/sshreya/PortfolioProjects/blob/main/images/Cohort%20Retention%20Analysis/monthly%20revenue.png)
  
