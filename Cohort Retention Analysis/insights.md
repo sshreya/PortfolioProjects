@@ -53,8 +53,61 @@ from
     score_cte 
 ;
 ```
-This shows 3 clusters of customers based on the RFM score.
+Tableau automatically creates 5 clusters of customers based on the RFM score.
 
-`Lapsed Customers` - Customers who 
+![](https://github.com/sshreya/PortfolioProjects/blob/main/Cohort%20Retention%20Analysis/images/RFM%20Score.png)
 
-![](https://github.com/sshreya/PortfolioProjects/blob/main/Cohort%20Retention%20Analysis/images/RFM%20score.png)
+`Cluster 1` - `High-Value Loyal Customers` 
+
+1. Most recent purchases
+2. Highest purchase frequency
+3. Highest monetary value
+4. These are your best customers - frequent shoppers who spend significantly more than other clusters and have purchased recently. They likely represent the core customer base driving most of your revenue.
+
+`Cluster 2` - `Active Mid-Value Customers`
+
+1. Fairly recent purchases
+2. Moderate purchase frequency
+3. Moderate spending
+4. These are good,reliable customers who purchase regularly but spend less than Cluster 1. They represent growth potential if we can increase their spending.
+
+`Cluster 5` - `At-Risk Mid-Value Customers`
+
+1. Less recent purchases
+2. Lower purchase frequency
+3. Lower spending
+4. These customers show declining engagement. They used to purchase but are becoming inactive. Re-engagement campaigns could help bring them back.
+
+`Cluster 3` - `Dormant Low-Value Customers` 
+
+1. Inactive for a long time
+2. Very low purchase frequency
+3. Low spending
+4. These customers have largely disengaged and might need strong incentives to return.
+
+`Cluster 4` - `Lost Customers`
+
+1. Highly inactive
+2. Lowest purchase frequency
+3. Lowest monetary value
+4. These customers have effectively churned. They made few purchases and haven't returned in nearly a year.
+
+This clustering suggests a clear segmentation strategy for marketing efforts, with focus on retaining Cluster 1, developing Cluster 2, reactivating Cluster 5, and potentially using different approaches for Clusters 3 and 4 depending on acquisition costs versus potential lifetime value.
+
+![](https://github.com/sshreya/PortfolioProjects/blob/main/Cohort%20Retention%20Analysis/images/Customer%20clusters.png)
+
+### Given that the UCI Online Retail dataset specifically mentions that "many customers of the company are wholesalers" the RFM nalysis also suggests a similar segregation. 
+
+Potential Wholesalers (Business Customers):
+
+`Cluster 1`: With average spending of £5,763 and high frequency (11 purchases), these display classic wholesaler behavior - frequent, large-volume purchases.
+
+`Cluster 2`: Spending £2,029 on average with moderate frequency (6 purchases) could represent smaller wholesalers or business customers with less frequent restocking needs.
+
+`Cluster 5`: With £1,326 average spend and decreasing recency, these might be smaller wholesalers or business customers who are becoming less active.
+
+Potential Retail Customers:
+
+`Cluster 3 & 4`: With significantly lower monetary values (£919 and £804) and much lower frequency (3 and 2 purchases), these align with typical retail customer behavior - occasional, smaller purchases.
+
+The monetary value is particularly telling here - the nearly 6x difference between Cluster 1 and Cluster 4 strongly suggests different customer types rather than just different engagement levels within the same customer type.
