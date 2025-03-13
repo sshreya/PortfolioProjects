@@ -1,5 +1,7 @@
 # Pixar Movies Analysis
 
+![](https://github.com/sshreya/PortfolioProjects/blob/main/Pixar%20Movies%20Analysis/images/pixar_animation_studios_wallpaper__1995_2023__by_coolteen15_dg1u1e3-fullview.jpg)
+
 ## Overview
 This analysis is part of Maven's Pixar Challenge 2025. The challenge is to Use data visualization and storytelling to showcase the legacy of Disney Pixar films over time.
 
