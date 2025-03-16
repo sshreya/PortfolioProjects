@@ -11,4 +11,4 @@ It lists each film’s creators (storywriters, screenwriters, directors, compose
 
 - **Challenge Link** - https://mavenanalytics.io/challenges/maven-pixar-challenge/967013fc-1ff2-4453-a1ac-1ac1e0624c52
 - **Database** - MySQL
-- **Tableau Link** 
+- **Tableau Link** - https://public.tableau.com/shared/M5Y6MQTRT?:display_count=n&:origin=viz_share_link
