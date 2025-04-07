@@ -96,7 +96,7 @@ This clustering suggests a clear segmentation strategy for marketing efforts, wi
 
 ![](https://github.com/sshreya/PortfolioProjects/blob/main/Cohort%20Retention%20Analysis/images/Customer%20clusters.png)
 
-### Given that the UCI Online Retail dataset specifically mentions that "many customers of the company are wholesalers" the RFM nalysis also suggests a similar segregation. 
+### Given that the UCI Online Retail dataset specifically mentions that "many customers of the company are wholesalers" the RFM analysis also suggests a similar segregation. 
 
 Potential Wholesalers (Business Customers):
 
